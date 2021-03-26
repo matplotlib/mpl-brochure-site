@@ -1,0 +1,113 @@
+:root{
+  /* START COLOR PALETTE */
+
+  /* viridis solid colors */
+  --dark-purple: #440154;
+  --purple: #482475;
+  --blue: #355F8D;
+  --teal : #22A884;
+  --green : #7AD151;
+  --lime : #BDDF26;
+
+  /* utility colors for text, links, etc... */
+  --grey: #4F4F4F;
+  --logo-blue: #11557C;
+  --pale-blue: #869FBB;
+  --pale-orange: #FFC9A5;
+  --orange: #FFAA70;
+  --bold-orange: #FFAA70;
+  /* END COLOR PALETTE */
+
+  /* START BACKGROUND GRADIENTS */
+
+  /* viridis gradients */
+  --viridis: linear-gradient(90deg, #0C0154, #482475, #414487, #355F8D, #2A788E, #21908D, #22A884, #7AD151, #BDDF26);
+  --viridis-purple: linear-gradient(90deg, #440154, #355F8D);
+  --viridis-blue: linear-gradient(90deg, #414487, #21908D);
+  --viridis-teal: linear-gradient(90deg, #2A788E, #42BE71);
+  --viridis-green: linear-gradient(90deg, #42BE71, #BDDF26);
+  /* END BACKGROUND GRADIENTS */
+
+  /* START TYPOGRAPHY */
+
+  /* font family */
+  --aleo: 'Aleo', serif;
+  --open-sans: 'Open Sans', sans-serif;
+
+  /* weights */
+  --regular: 400;
+  --bold: 700;
+
+  /* font sizes */
+  --base-font: 14px;
+  --heading-5: calc(var(--base-font) / 1.25);
+  --heading-4: calc(var(--base-font) * 1.25);
+  --heading-3: calc(var(--heading-4) * 1.25);
+  --heading-2: calc(var(--heading-3) * 1.25);
+  --heading-1: calc(var(--heading-2) * 1.25);
+
+  /* END TYPOGRAPHY */
+
+  /* DEFAULT VALUES */
+  --heading-font: var(--aleo);
+  --default-font: var(--open-sans);
+  --default-text: var(--grey);
+  --link-color: var(--bold-orange);
+}
+
+body{
+  font-family: var(--default-font);
+  color: var(--default-text);
+  font-size: 14px;
+}
+
+/* typography */
+p{
+  line-height: 1.8em;
+}
+
+p.decorative{
+  font-size: var(--heading-4);
+}
+
+h1, h2, h3, h4, h5{
+  font-family: var(--heading-font);
+  color: var(--logo-blue);
+}
+
+h1{
+  font-size: var(--heading-1);
+}
+
+h2{
+  font-size: var(--heading-2)
+}
+
+h3{
+  font-size: var(--heading-3);
+}
+
+h4{
+  font-size: var(--heading-4);
+}
+
+h5{
+  font-size: var(--heading-5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--pale-blue)
+}
+
+ul{
+  
+}
+
+li{
+  
+}
+
+a{
+  font-weight: var(--bold);
+  color: var(--bold-orange);
+  text-decoration: none;
+}
