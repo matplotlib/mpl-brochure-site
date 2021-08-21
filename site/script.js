@@ -1,13 +1,17 @@
 // accesible javascript tab switcher 
-// https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
+// modified from https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
 
 window.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 
+  // set currently active tab to 0
+  tabList.setAttribute("data-current-tab", 0)
+
   // Add a click event handler to each tab
-  tabs.forEach(tab => {
+  tabs.forEach((tab, i) => {
     tab.addEventListener("click", changeTabs);
+    tab.setAttribute("data-tab-count", i)
   });
 
   // Enable arrow navigation between tabs in the tab list
@@ -39,10 +43,12 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function changeTabs(e) {
-
   const target = e.target;
   const parent = target.parentNode;
   const grandparent = parent.parentNode;
+
+  // set attribute for currently active tab for setting the location of the pointer triangle
+  parent.setAttribute("data-current-tab", e.target.getAttribute("data-tab-count"))
 
   // Remove all current selected tabs
   parent
