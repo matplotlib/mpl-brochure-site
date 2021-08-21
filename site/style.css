@@ -81,7 +81,7 @@ p, li{
   line-height: 1.8em;
 }
 
-p.decorative{
+p.__decorative{
   font-size: var(--heading-4);
 }
 
@@ -119,13 +119,13 @@ a{
   text-decoration: none;
 }
 
-a.offsite{
+a.link--offsite{
   font-family: var(--heading-font);
   font-size: var(--heading-4);
   display: block;
 }
 
-a.offsite::after{
+a.link--offsite::after{
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -174,37 +174,37 @@ button:hover::after, a.button:hover::after{
   margin-left: 80px;
 }
 
-button.purple, a.button.purple{
+.button--purple, a.button--purple{
   background: var(--viridis-purple);
 }
 
-button.blue, a.button.blue{
+.button--blue, a.button--blue{
   background: var(--viridis-blue);
 }
 
-button.teal, a.button.teal{
+.button--teal, a.button--teal{
   background: var(--viridis-teal);
 }
 
-button.green, a.button.green{
+.button--green, a.button--green{
   background: var(--viridis-green);
   color: var(--black);
 }
 
-button.green::after, a.button.green::after{
+.button--green::after, a.button--green::after{
   background-image: url("_images/arrow-right-solid-black.png");
 }
 
 /* horizontal rules */
 
-hr{
+.rule {
   width: 100%;
   background-color: var(--light-gray);
   border: none;
   height: 1px;
 }
 
-hr.viridis{
+.rule--viridis{
   background-image: var(--viridis);
   height: 3px;
 }
@@ -233,23 +233,23 @@ hr.viridis{
   background-color:var(--blue)
 }
 
-.callout.purple::before{
+.callout--purple::before{
   background-image: var(--viridis-purple);
 }
 
-.callout.blue::before{
+.callout--blue::before{
   background-image: var(--viridis-blue);
 }
 
-.callout.teal::before{
+.callout--teal::before{
   background-image: var(--viridis-teal);
 }
 
-.callout.green::before{
+.callout--green::before{
   background-image: var(--viridis-green);
 }
 
-.callout-icon{
+.callout__icon{
   color: var(--logo-blue);
   font-size: 2em;
   margin-right: 10px;
@@ -282,7 +282,7 @@ hr.viridis{
   font-family: var(--heading-font);
 }
 
-.quicklink-icon{
+.quicklinks__icon{
   width: 75px;
   display: block;
   margin-bottom: 10px;
@@ -301,11 +301,11 @@ hr.viridis{
 }
 
 /* tab switcher */
-.tab-switcher{
+.tools{
   display: flex;
 }
 
-.tool-tabs{
+.tabs{
   padding: 0;
   padding: 0;
   list-style-type: none;
@@ -315,7 +315,7 @@ hr.viridis{
   justify-content: space-evenly;
 }
 
-.tool-tab{
+.tabs__tab{
   font-family: var(--heading-font);
   color: var(--logo-blue);
   font-size: var(--heading-4);
@@ -323,14 +323,14 @@ hr.viridis{
   padding: 0 20px 0 0;
 }
 
-.tool-content{
+.tabs__content{
   border: solid 1px var(--light-gray);
   flex-grow: 1;
   padding: 20px 20px 20px 40px;
   position: relative;
 }
 
-.tool-content::before{
+.tabs__content::before{
   content: "";
   width: 8px;
   height: 100%;
@@ -355,14 +355,14 @@ footer h1{
   color: var(--white);
 }
 
-ul.social-links{
+ul.social{
   list-style-type: none;
   padding: 0;
   display: block;
   font-size: 18px;
 }
 
-ul.social-links li{
+ul.social li{
   display: inline-block;
   margin-right: 5px;
 }
@@ -442,67 +442,70 @@ main{
   }
 }
 
-.intro-content{
+.grid__intro-text{
   grid-area: intro-text;
 }
 
-.intro-area{
+.grid__intro{
   grid-area: intro;
 }
 
-.quicklinks-section{
+.grid__quicklinks{
   grid-area: quicklinks;
 }
 
 @media (min-width: 1000px){
-  .quicklinks-section{
+  .grid__quicklinks{
     padding: 0 100px;
   }
 }
 
-.hr-1{
+.grid__hr-1{
   grid-area: hr1;
 }
 
-.resources-section{
+.grid__resources{
   grid-area: resources;
 }
 
-.news-section {
+.grid__news {
   grid-area: news;
 }
 
-.tools-intro{
+.grid__tools{
   grid-area: tools;
 }
 
-.tools-switcher{
+.grid__tools-switcher{
   grid-area: tool-switcher;
 }
 
-.hr-2{
+.grid__hr-2{
   grid-area: hr2;
 }
 
-.support-section{
+.grid__support{
   grid-area: support;
 }
 
-.support-items{
+.grid__contribute{
   grid-area: contribute;
+}
+
+.support__items{
   list-style-type: none;
   padding: 0;
 }
 
 @media (min-width: 800px){
-  .support-items{
+  .support__items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
-.support-items .callout{
+.support__items .callout{
   flex: 0 0 calc(33.333333% - 13.3333333333333px);
 }
 
@@ -537,15 +540,15 @@ footer{
   }
 }
 
-.mpl-info{
+.grid__mpl-info{
   grid-area: mpl;
 }
 
-.mpl-links{
+.grid__mpl-links{
   grid-area: links;
 }
 
-.release-docs{
+.grid__release-docs{
   grid-area: release;
 }
 
