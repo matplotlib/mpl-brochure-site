@@ -8,64 +8,76 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/207d676d1c.js" crossorigin="anonymous"></script>
   <title>Matplotlib</title>
 </head>
 <body>
   <header></header>
   <main>
     <!-- START INTRO SECTION -->
-    <section class="intro">
-      <div class="cool-plot"></div>
-      <div class="intro-content">
-        <h1>Matplotlib: Visualization with Python</h1>
-        <p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.</p>
+    <section class="intro-content">
+      <h1>Matplotlib: Visualization with Python</h1>
+      <p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.</p>
 
-        <h3>Create</h3>
-        <ul>
-          <li>Develop <a href="https://matplotlib.org/stable/gallery/index.html">publication quality plots</a> with just a few lines of code</li>
-          <li>Use <a href="https://matplotlib.org/stable/gallery/index.html#event-handling">interactive figures</a> that can zoom, pan, update...</li>
-        </ul>
+      <h3>Create</h3>
+      <ul class="no-padding">
+        <li>Develop <a href="https://matplotlib.org/stable/gallery/index.html">publication quality plots</a> with just a few lines of code</li>
+        <li>Use <a href="https://matplotlib.org/stable/gallery/index.html#event-handling">interactive figures</a> that can zoom, pan, update...</li>
+      </ul>
 
-        <h3>Customize</h3>
-        <ul>
-          <li><a href="https://matplotlib.org/stable/tutorials/index.html#tutorials">Take full control</a> of line styles, font properties, axes properties...</li>
-          <li><a href="https://matplotlib.org/stable/api/index_backend_api.html">Export and embed</a> to a number of file formats and interactive environments</li>
-        </ul>
+      <h3>Customize</h3>
+      <ul class="no-padding">
+        <li><a href="https://matplotlib.org/stable/tutorials/index.html#tutorials">Take full control</a> of line styles, font properties, axes properties...</li>
+        <li><a href="https://matplotlib.org/stable/api/index_backend_api.html">Export and embed</a> to a number of file formats and interactive environments</li>
+      </ul>
 
-        <h3>Extend</h3>
-        <ul>
-          <li>Explore tailored functionality provided by <a href="https://matplotlib.org/stable/thirdpartypackages/index.html">domain-specific packages</a></li>
-          <li>Learn more about Matplotlib through the many <a href="https://matplotlib.org/stable/resources/index.html">external learning resources</a></li>
-        </ul>
+      <h3>Extend</h3>
+      <ul class="no-padding">
+        <li>Explore tailored functionality provided by <a href="https://matplotlib.org/stable/thirdpartypackages/index.html">domain-specific packages</a></li>
+        <li>Learn more about Matplotlib through the many <a href="https://matplotlib.org/stable/resources/index.html">external learning resources</a></li>
+      </ul>
 
-        <button>
-          <a href="https://mybinder.org/v2/gh/tacaswell/2021-03_APS/main?urlpath=lab" class="button">
-            Try Matplotlib (on Binder)
-          </a>
-        </button>
-      </div>
+      <a href="https://mybinder.org/v2/gh/tacaswell/2021-03_APS/main?urlpath=lab" class="button purple" tabindex="0" role="button">
+        Try Matplotlib (on Binder)
+      </a>
+
+    </section>
+    <section class="placeholder intro-area">
     </section>
     <!-- END INTRO SECTION -->
 
     <!-- START QUICKLINKS -->
-    <section class="quicklinks">
-      <ul>
-        <li><a href="https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py">Getting Started</a>
+    <section class="quicklinks-section">
+      <ul class="quicklinks">
+        <li>
+          <img src="_images/getting-started.png" alt="computer desktop icon" class="quicklink-icon">
+          <a href="https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py">Getting Started</a>
         </li>
-        <li><a href="https://matplotlib.org/stable/gallery/index.html">Sample Plots</a>
+        <li>
+          <img src="_images/sample-plots.png" alt="folder icon" class="quicklink-icon">
+          <a href="https://matplotlib.org/stable/gallery/index.html">Sample Plots</a>
         </li>
-        <li><a href="https://matplotlib.org/stable/users/index.html">User Guide</a>
+        <li>
+          <img src="_images/userguide.png" alt="documentation book icon" class="quicklink-icon">
+          <a href="https://matplotlib.org/stable/users/index.html">User Guide</a>
         </li>
-        <li><a href="https://github.com/matplotlib/cheatsheets#cheatsheets">
-          Cheat Sheets</a></li>
-        <li><a href="https://matplotlib.org/stable/contents.html">
-          Documentation</a></li>
+        <li>
+          <img src="_images/cheatsheets.png" alt="cheatsheet icon" class="quicklink-icon">
+          <a href="https://github.com/matplotlib/cheatsheets#cheatsheets">Cheat Sheets</a>
+        </li>
+        <li>
+          <img src="_images/documentation.png" alt="matplotlib logo icon" class="quicklink-icon">
+          <a href="https://matplotlib.org/stable/contents.html">Documentation</a>
+        </li>
       </ul>
+      
     </section>
     <!-- END QUICKLINKS -->
 
-    <!-- START COMMUNITY -->
-    <section class="community">
+    <hr class="viridis hr-1">
+
+    <!-- START RESOURCES -->
+    <section class="resources-section">
       <h3>Resources</h3>
       <p>
         Matplotlib is a welcoming, inclusive project, and evryone within the
@@ -74,6 +86,7 @@
         code of conduct</a>.
       </p>
       <div class="callout purple">
+        <i class="far fa-question-circle callout-icon"></i>
         Be sure to check the <a href="https://matplotlib.org/stable/faq/index.html">FAQ</a>,
         the <a href="https://matplotlib.org/stable/api/index.html">API docs</a>. The full text <a href="https://matplotlib.org/stable/search.html">search</a> is a
         good way to discover the docs including the many examples.
@@ -81,23 +94,26 @@
       </div>
 
       <div class="callout blue">
+        <i class="fab fa-discourse callout-icon" aria-hidden="true"></i>
         Join our community
         at <a href="discourse.matplotlib.org">discourse.matplotlib.org</a> to
         get help, share your work, and discuss contributing & development.
       </div>
 
       <div class="callout teal">
+        <i class="fab fa-gitter callout-icon" aria-hidden="true"></i>
         Short questions may be posted on the <a href="https://gitter.im/matplotlib/matplotlib">gitter</a> channel.
       </div>
 
-      <div class="callout lime">
+      <div class="callout green">
+        <i class="fab fa-stack-overflow callout-icon" aria-hidden="true"></i>
         Check out the Matplotlib tag on <a href="https://stackoverflow.com/questions/tagged/matplotlib">stackoverflow</a>.
       </div>
     </section>
-    <!-- END COMMUNITY -->
+    <!-- END RESOURCES -->
 
     <!-- News -->
-    <section class="news">
+    <section class="news-section">
       <!-- optional important news -->
       <div class="news-item">
         <h5 class="date">March 30, 2021</h5>
@@ -124,149 +140,174 @@
     </section>
 
     <!-- START DOMAIN SPECIFIC TOOLS -->
-    <section class="tools">
-      <h3></h3>
-      <p></p>
-      <a href="" class="offsite"></a>
+      <section class="tools-intro">
+        <h3>Domain Specific Tools</h3>
+        <p>A large number of third party packages extend and build on Matplotlib functionality, including several higher-level plotting interfaces (seaborn, HoloViews, ggplot, ...), and a projection and mapping toolkit (Cartopy).</p>
+        <a href="" class="offsite">More Domain-Specific Tools</a>
+      </section>
 
       <!-- tool switcher -->
-      <div class="tab-switcher">
-        <ul class="tool-tabs" role="tablist" aria-label="Domain Specific Libray Tabs">
-          <li roll="tab" aria-selected="true" id="seaborn-tab" aria-controls="seaborn-content" tabindex="0"></li>
-          <li roll="tab" aria-selected="false" id="cartopy-tab" aria-controls="cartopy-content" tabindex="-1"></li>
-          <li roll="tab" aria-selected="false" id="dna-features-viewer-tab" aria-controls="dna-features-viewer-content" tabindex="-1"></li>
-          <li roll="tab" aria-selected="false" id="plotnine-tab" aria-controls="plotnine-content" tabindex="-1"></li>
-          <li roll="tab" aria-selected="false" id="wcs-axes-tab" aria-controls="wcs-axes-content" tabindex="-1"></li>
-        </ul>
-        <div class="tool-content" id="seaborn-content" role="tabpanel" tabindex="0" aria-labelledby="seaborn-tab">
-          <div class="tool-content-info">
-            <h3>seaborn</h3>
-            <p></p>
-            <p><a href="https://seaborn.pydata.org/">statistical data visualization</a></p>
-          </div>
-          <img src="" alt="">
+    <section class="tab-switcher tools-switcher">
+      <ul class="tool-tabs" role="tablist" aria-label="Domain Specific Libray Tabs">
+        <li class="tool-tab" roll="tab" aria-selected="true" id="seaborn-tab" aria-controls="seaborn-content" tabindex="0">Seaborn</li>
+        <li class="tool-tab" roll="tab" aria-selected="false" id="cartopy-tab" aria-controls="cartopy-content" tabindex="-1">cartopy</li>
+        <li class="tool-tab" roll="tab" aria-selected="false" id="dna-features-viewer-tab" aria-controls="dna-features-viewer-content" tabindex="-1">DNA Features Viewer</li>
+        <li class="tool-tab" roll="tab" aria-selected="false" id="plotnine-tab" aria-controls="plotnine-content" tabindex="-1">plotnine</li>
+        <li class="tool-tab" roll="tab" aria-selected="false" id="wcs-axes-tab" aria-controls="wcs-axes-content" tabindex="-1">WCS Axes</li>
+      </ul>
+      <div class="tool-content" id="seaborn-content" role="tabpanel" tabindex="0" aria-labelledby="seaborn-tab">
+        <div class="tool-content-info">
+          <h3>seaborn</h3>
+          <p>seaborn is a high level interface for drawing statistical graphics with Matplotlib. It aims to make visualization a central part of exploring and understanding complex datasets.</p>
+          <p><a href="https://seaborn.pydata.org/">statistical data visualization</a></p>
         </div>
-        <div class="tool-content" id="cartopy-content" role="tabpanel" tabindex="0" aria-labelledby="cartopy-tab" hidden>
-          <div class="tool-content-info">
-            <h3></h3>
-            <p></p>
-            <p><a href="https://scitools.org.uk/cartopy/docs/latest/">cartopy</a></p>
-          </div>
-          <img src="" alt="">
-        </div>
-        <div class="tool-content" id="dna-features-viewer-content" role="tabpanel" tabindex="0" aria-labelledby="dna-features-viewer-tab" hidden>
-          <div class="tool-content-info">
-            <h3></h3>
-            <p></p>
-            <p><a href="https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer">DNA Features Viewer</a></p>
-          </div>
-          <img src="" alt="">
-        </div>
-        <div class="tool-content" id="plotnine-content" role="tabpanel" tabindex="0" aria-labelledby="plotnine-tab" hidden>
-          <div class="tool-content-info">
-            <h3>plotnine</h3>
-            <p></p>
-            <p><a href="https://plotnine.readthedocs.io/en/stable/">A Grammar of Graphics for Python</a></p>
-          </div>
-          <img src="" alt="">
-        </div>
-        <div class="tool-content" id="wcs-axes-content" role="tabpanel" tabindex="0" aria-labelledby="wcs-axes-tab" hidden>
-          <div class="tool-content-info">
-            <h3></h3>
-            <p></p>
-            <p><a href="https://docs.astropy.org/en/stable/visualization/wcsaxes/">WCSAxes</a></p>
-          </div>
-          <img src="" alt="">
-        </div>
+        <img src="" alt="">
       </div>
-
+      <div class="tool-content" id="cartopy-content" role="tabpanel" tabindex="0" aria-labelledby="cartopy-tab" hidden>
+        <div class="tool-content-info">
+          <h3></h3>
+          <p></p>
+          <p><a href="https://scitools.org.uk/cartopy/docs/latest/">cartopy</a></p>
+        </div>
+        <img src="" alt="">
+      </div>
+      <div class="tool-content" id="dna-features-viewer-content" role="tabpanel" tabindex="0" aria-labelledby="dna-features-viewer-tab" hidden>
+        <div class="tool-content-info">
+          <h3></h3>
+          <p></p>
+          <p><a href="https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer">DNA Features Viewer</a></p>
+        </div>
+        <img src="" alt="">
+      </div>
+      <div class="tool-content" id="plotnine-content" role="tabpanel" tabindex="0" aria-labelledby="plotnine-tab" hidden>
+        <div class="tool-content-info">
+          <h3>plotnine</h3>
+          <p></p>
+          <p><a href="https://plotnine.readthedocs.io/en/stable/">A Grammar of Graphics for Python</a></p>
+        </div>
+        <img src="" alt="">
+      </div>
+      <div class="tool-content" id="wcs-axes-content" role="tabpanel" tabindex="0" aria-labelledby="wcs-axes-tab" hidden>
+        <div class="tool-content-info">
+          <h3></h3>
+          <p></p>
+          <p><a href="https://docs.astropy.org/en/stable/visualization/wcsaxes/">WCSAxes</a></p>
+        </div>
+        <img src="" alt="">
+      </div>
+      
     </section>
     <!-- END DOMAIN SPECIFIC TOOLS -->
 
+    <hr class="hr-2" />
+
     <!-- START SUPPORT MATPLOTLIB -->
-    <section class="support">
-      <div class="callout purple">
-        <h4>Contribute</h4>
-        <p>Matplotlib is a community project maitained for and by its users.  There are many ways
-          you can help!
-
-          Help other users <a href="https://discourse.matplotlib.org">on
-          discourse</a>, report a bug or request a
-          feature <a href="https://github.com/matplotlib/matplotlib/issues">on
-          GitHub</a>, or improve
-          the <a href="https://matplotlib.org/stable/devel/index.html">documentation
-          and code</a>!
-
-        </p>
-        <a href="https://discourse.matplotlib.org" class="offsite">Join us on discourse</a>
-        <a href="https://github.com/matplotlib/matplotlib" class="offsite">Join us on GitHub</a>
-
-      </div>
-      <div class="callout blue">
-        <h4>Cite</h4>
-        <p>Matplotlib is the result of development efforts by John Hunter
-          (1968-2012) and the
-          projects <a href="https://matplotlib.org/stable/users/credits.html">many
-            contributors.</a>
-
-          If Matplotlib contributes to project that leads to a scientific
-          publication, please acknowledge this work by citing the project!
-        </p>
-        <a href="https://matplotlib.org/stable/citing.html" class="offsite">Ready made citation</a>
-      </div>
-      <div class="callout teal">
-        <h4>Donate</h4>
-        <p>
-
-        </p>
-        <a href="https://github.com/sponsors/matplotlib">Sponsor Matplotlib on GithHub</a>
-        <a href="https://numfocus.org/donate-to-matplotlib" class="offsite">Donate to Matplotlib</a>
-      </div>
+    <section class="support-section">
+      <h2>Support Matplotlib</h2>
+      <ul class="support-items">
+        <li class="callout purple">
+          <h4>Contribute</h4>
+          <p>Matplotlib is a community project maitained for and by its users.  There are many ways
+            you can help!
+  
+            Help other users <a href="https://discourse.matplotlib.org">on
+            discourse</a>, report a bug or request a
+            feature <a href="https://github.com/matplotlib/matplotlib/issues">on
+            GitHub</a>, or improve
+            the <a href="https://matplotlib.org/stable/devel/index.html">documentation
+            and code</a>!
+  
+          </p>
+          <a href="https://discourse.matplotlib.org" class="offsite">Join us on discourse</a>
+          <a href="https://github.com/matplotlib/matplotlib" class="offsite">Join us on GitHub</a>
+  
+        </li>
+        <li class="callout blue">
+          <h4>Cite</h4>
+          <p>Matplotlib is the result of development efforts by John Hunter
+            (1968-2012) and the
+            projects <a href="https://matplotlib.org/stable/users/credits.html">many
+              contributors.</a>
+  
+            If Matplotlib contributes to project that leads to a scientific
+            publication, please acknowledge this work by citing the project!
+          </p>
+          <a href="https://matplotlib.org/stable/citing.html" class="offsite">Ready made citation</a>
+        </li>
+        <li class="callout teal">
+          <h4>Donate</h4>
+          <p>
+            Ut tempor finibus convallis. Suspendisse potenti. Aliquam dui nisi, iaculis dignissim risus ac, mollis tempor dui. Donec suscipit purus mi, eget porta augue facilisis id.
+          </p>
+          <a href="https://github.com/sponsors/matplotlib" >Sponsor Matplotlib on GithHub</a>
+          <a href="https://numfocus.org/donate-to-matplotlib" class="offsite">Donate to Matplotlib</a>
+        </li>
+      </ul>
     </section>
     <!-- END SUPPORT MATPLOTLIB -->
-  </main>
 
-  <footer>
-    <div class="mpl-info">
-      <h1></h1>
-      <ul class="social-links">
-        <li class="github"><a href="https://github.com/matplotlib/matplotlib">github</a></li>
-        <li class="twitter"><a href="">twitter</a></li>
-        <li class="stackoverflow"><a href="">SO</a></li>
-        <li class="gitter"><a href="">gitter</a></li>
-        <li class="instagran"><a href="">insta</a></li>
-      </ul>
-      <button class="green"><a href="https://numfocus.org/donate-to-matplotlib" class="button">Donate to Matplotlib</a>
-      </button>
-      <p class="copywrite"></p>
-    </div>
+    <footer class="footer-section">
+      <div class="mpl-info">
+        <h1>matplotlib</h1>
+        <ul class="social-links fas">
+          <li>
+            <a href="https://github.com/matplotlib/matplotlib" aria-label="Matplotlib on Github">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="" aria-label="Matplotlib on Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="stackoverflow">
+            <a href="" aria-label="Matplotlib on Stack Overflow">
+              <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="gitter">
+            <a href="" aria-label="Matplotlib on Gitter">
+              <i class="fab fa-gitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="instagran">
+            <a href="" aria-label="Matplotlib on Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="https://numfocus.org/donate-to-matplotlib" class="button green">Donate to Matplotlib</a>
+        
+        <p class="copywrite">©2021 The Matplotlib Development team</p>
+      </div>
 
-    <div class="utility-links">
       <ul class="mpl-links">
-        <li><a href="https://github.com/matplotlib/matplotlib/blob/master/CODE_OF_CONDUCT.md"></a>Code of Conduct</li>
-        <li><a href=""></a>License</li>
-        <li><a href="https://github.com/matplotlib/governance"></a>Governance</li>
-        <li><a href=""></a>NumFOCUS Fiscally Sponsered Project</li>
-
+        <li><a href="https://github.com/matplotlib/matplotlib/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+        <li><a href="">License</a></li>
+        <li><a href="https://github.com/matplotlib/governance">Governance</a></li>
+        <li><a href="">NumFOCUS Fiscally Sponsered Project</a></li>
       </ul>
+
       <ul class="release-docs">
-        <dl>
+        <dl class="release">
           <dt>Latest Stable Release</dt>
           <dd><a href="https://matplotlib.org/stable">docs</a> | <a href="https://matplotlib.org/stable/users/whats_new.html">changelog</a>
           </dd>
         </dl>
-        <dl>
+        <dl class="release">
           <dt>Last release to support Python 2</dt>
           <dd><a href="https://matplotlib.org/2.2.4">docs</a> | <a href="https://matplotlib.org/2.2.4/users/whats_new.html">changelog</a>
           <dd></dd>
         </dl>
-        <dl>
+        <dl class="release">
           <dt>Development version</dt>
           <dd><a href="https://matplotlib.org/devdocs/index.html">docs</a>
           </dd>
         </dl>
       </ul>
-    </div>
-  </footer>
-</body>
+    </footer>
+      
+    </main>
+
+  </body>
 </html>
