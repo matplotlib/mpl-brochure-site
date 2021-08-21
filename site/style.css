@@ -119,10 +119,21 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 a.link--offsite{
   font-family: var(--heading-font);
   font-size: var(--heading-4);
   display: block;
+  position: relative;
+  left: 0;
+  transition: left .2s ease-in-out;
+}
+
+a.link--offsite:hover{
+  left: 10px;
 }
 
 a.link--offsite::after{
@@ -202,6 +213,7 @@ ul.no-padding{
   background-color: var(--light-gray);
   border: none;
   height: 1px;
+  margin-bottom: 1.5em;
 }
 
 .rule--viridis{
@@ -220,6 +232,19 @@ ul.no-padding{
   margin-bottom: 20px;
   padding: 28px 20px 20px;
   position: relative;
+}
+
+.callout--vertical{
+  display: flex;
+  flex-direction: row;
+}
+
+.callout--vertical p:last-child{
+  margin-bottom: 0;
+}
+
+.callout:last-child{
+  margin-bottom: 0;
 }
 
 .callout::before{
@@ -255,6 +280,10 @@ ul.no-padding{
   margin-right: 10px;
 }
 
+.callout--vertical .callout__icon{
+  align-self: center;
+}
+
 .callout > *{
   margin-top: 0;
 }
@@ -269,7 +298,7 @@ ul.no-padding{
   flex-wrap: wrap;
 }
 
-.quicklinks li{
+.quicklinks a{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,6 +327,13 @@ ul.no-padding{
   .quicklinks li{
     margin-bottom: 20px;
   }
+}
+
+/* News */
+.news{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* tab switcher */
@@ -441,6 +477,13 @@ ul.social li{
   display: inline-block;
   margin-right: 5px;
 }
+ul.social a{
+  color: var(--white);
+  transition: color .2 ease-in-out;
+}
+ul.social a:hover i{
+  color: var(--alpha-white);
+}
 
 ul.mpl-links, ul.release-docs{
   list-style-type: none;
@@ -455,9 +498,9 @@ ul.mpl-links{
   font-weight: bold;
 }
 
-ul.mpl-links a{
+/* ul.mpl-links a:hover{
   text-decoration: underline;
-}
+} */
 
 .release dt{
   font-family: var(--heading-font);
@@ -489,10 +532,11 @@ main{
     grid-template-areas: 
     ". intro intro intro intro intro intro intro-text intro-text intro-text intro-text intro-text intro-text ."
     ". quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks ."
-    "hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1 hr1"
+    "rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1"
     ". resources resources resources resources resources resources news news news news news news."
+    "rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2"
     ". tools tools tools tools tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher ."
-    "hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2 hr2"
+    "rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3"
     ". support support support support support support support support support support support support ."
     "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
   }
@@ -506,12 +550,13 @@ main{
     ". intro-text ."
     ". intro ."
     ". quicklinks  ."
-    "hr1 hr1 hr1"
+    "rule1 rule1 rule1"
     ". resources ."
     ". news ."
+    "rule2 rule2 rule2"
     ". tools ."
     ". tool-switcher ."
-    "hr2 hr2 hr2"
+    "rule3 rule3 rule3"
     ". support ."
     "footer footer footer";
   }
@@ -535,8 +580,8 @@ main{
   }
 }
 
-.grid__hr-1{
-  grid-area: hr1;
+.grid__rule1{
+  grid-area: rule1;
 }
 
 .grid__resources{
@@ -547,6 +592,10 @@ main{
   grid-area: news;
 }
 
+.grid__rule2{
+  grid-area: rule2;
+}
+
 .grid__tools{
   grid-area: tools;
 }
@@ -555,8 +604,8 @@ main{
   grid-area: tool-switcher;
 }
 
-.grid__hr-2{
-  grid-area: hr2;
+.grid__rule3{
+  grid-area: rule3;
 }
 
 .grid__support{
