@@ -302,7 +302,7 @@ button:hover::after, a.button:hover::after{
 
 /* tab switcher */
 .tools{
-  display: flex;
+  min-height: 300px;
 }
 
 .tabs{
@@ -320,7 +320,6 @@ button:hover::after, a.button:hover::after{
   color: var(--logo-blue);
   font-size: var(--heading-4);
   font-weight: var(--bold);
-  padding: 0 20px 0 0;
 }
 
 .tabs__content{
@@ -550,6 +549,33 @@ footer{
 
 .grid__release-docs{
   grid-area: release;
+}
+
+.grid__tools-switcher__tabs{
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 800px){
+  .grid__tools-switcher__tabs{
+    grid-template-columns: minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px);
+    grid-template-areas: "tabs tabs panel panel panel panel panel panel"
+  }
+}
+
+@media (max-width: 799px){
+  .grid__tools-switcher__tabs{
+    grid-template-columns: 30% auto;
+    grid-template-areas: "tabs panel";
+  }
+}
+
+.grid__tabs__tabs{
+  grid-area: tabs;
+}
+
+.grid__tabs__panel{
+  grid-area: panel;
 }
 
 /* FOR DEVELOPMENT ONLY */
