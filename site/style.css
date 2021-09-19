@@ -367,8 +367,20 @@ a.button--green::after {
   justify-content: space-between;
 }
 
-.news__item:last-of-type {
+.news__item:not(:last-of-type){
+  margin-bottom: 2em;
+}
+
+.news__item--highlight, .news__item:last-of-type {
   margin-bottom: 40px;
+}
+
+.news__item .date, .news__item--highlight .date{
+  margin: 1em 0 .5em;
+}
+
+.news__item--highlight .title{
+  margin: .5em 0 1em;
 }
 
 /* tab switcher */
