@@ -243,7 +243,7 @@ ul.no-padding{
   margin-bottom: 0;
 }
 
-.callout:last-child{
+.callout--vertical.callout:last-child{
   margin-bottom: 0;
 }
 
