@@ -265,17 +265,13 @@ a.button--green::after {
   position: relative;
 }
 
-.callout--vertical {
+.callout__list {
   display: flex;
   flex-direction: row;
 }
 
-.callout--vertical p:last-child {
-  margin-bottom: 0;
-}
-
-.callout--vertical.callout:last-child {
-  margin-bottom: 0;
+.callout__list p{
+  margin: 0 0 2em 0;
 }
 
 .callout::before {
@@ -309,10 +305,6 @@ a.button--green::after {
   color: var(--logo-blue);
   font-size: 2em;
   margin-right: 10px;
-}
-
-.callout--vertical .callout__icon {
-  align-self: center;
 }
 
 .callout > * {
@@ -1330,4 +1322,8 @@ footer {
 }
 #navbar-icon-links i.fa-bitbucket:before {
   color: #0052cc;
+}
+
+.collapse:not(.show) {
+    display: none;
 }
