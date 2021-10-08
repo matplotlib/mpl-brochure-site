@@ -18,11 +18,13 @@
 
   /* utility colors for text, links, etc... */
   --grey: #4f4f4f;
-  --logo-blue: #11557c;
-  --pale-blue: #869fbb;
+  --dark-blue: rgba(9, 6, 84, 1.0);
+  --link-blue: rgba(0, 91, 129, 1.0);
+  --logo-blue: #11557C;
+  --pale-blue: #2491CF;
   --pale-orange: #ffc9a5;
   --orange: #ffaa70;
-  --bold-orange: #ffaa70;
+  --bold-orange: #CA7900;
   --light-gray: #e5e5e5;
   --medium-gray: #c4c4c4;
   --black: #000;
@@ -58,24 +60,24 @@
 
   /* font family */
   --aleo: "Aleo", serif;
-  --open-sans: "Open Sans", sans-serif;
-
+  --open-sans: -apple-system, BlinkMacSystemFont, Segoe UI, "Helvetica Neue",
+       Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   /* weights */
   --regular: 400;
   --bold: 700;
 
   /* font sizes */
-  --base-font: 14px;
-  --heading-5: calc(var(--base-font) / 1.25);
-  --heading-4: calc(var(--base-font) * 1.25);
-  --heading-3: calc(var(--heading-4) * 1.25);
-  --heading-2: calc(var(--heading-3) * 1.25);
-  --heading-1: calc(var(--heading-2) * 1.25);
+  --base-font: 15px;
+  --heading-5: 18px;
+  --heading-4: 21px;
+  --heading-3: 26px;
+  --heading-2: 32px;
+  --heading-1: 36px;
 
   /* END TYPOGRAPHY */
 
   /* DEFAULT VALUES */
-  --heading-font: var(--aleo);
+  --heading-font: var(--open-sans);
   --default-font: var(--open-sans);
   --default-text: var(--grey);
   --link-color: var(--bold-orange);
@@ -91,7 +93,7 @@ body {
   padding-top: calc(var(--pst-header-height) + 20px);
   font-family: var(--default-font);
   color: var(--default-text);
-  font-size: 14px;
+  font-size: var(--base-font);
 }
 
 /* typography */
@@ -110,7 +112,8 @@ h3,
 h4,
 h5 {
   font-family: var(--heading-font);
-  color: var(--logo-blue);
+  color: var(--dark-blue);
+  font-weight: normal;
 }
 
 h1 {
@@ -137,12 +140,12 @@ h5 {
 }
 
 a {
-  font-weight: var(--bold);
-  color: var(--bold-orange);
+  color: var(--link-blue);
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--bold-orange);
   text-decoration: underline;
 }
 
