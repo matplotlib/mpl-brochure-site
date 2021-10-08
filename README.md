@@ -2,6 +2,7 @@
 
 This is the source for the top-level index.html for matplotlib.org
 
+Temporarily served at https://matplotlib.org/mpl-brochure-site/
 
 ## Deployment
 
