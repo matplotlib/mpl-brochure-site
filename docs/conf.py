@@ -24,6 +24,8 @@ extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 
+templates_path = ["_templates"]
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -33,7 +35,6 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 html_css_files = ['css/normalize.css', 'css/landing.css']
 html_theme = "mpl_sphinx_theme"
-html_sidebars={}
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
     "logo_link": "https://matplotlib.org/stable/",
@@ -42,7 +43,7 @@ html_theme_options = {
     "collapse_navigation": not is_release_build,
     "show_prev_next": False,
     "native_site": False,
-    "sidebarwidth": 0
+    "footer_items": ["landing_footer"],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
