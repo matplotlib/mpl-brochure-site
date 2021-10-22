@@ -1,0 +1,2 @@
+sphinx
+mpl-sphinx-theme

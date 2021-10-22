@@ -4,10 +4,14 @@ This is the source for the top-level index.html for matplotlib.org
 
 Temporarily served at https://matplotlib.org/mpl-brochure-site/
 
-## Deployment
+## build
 
-Copy the contents of `site/` to the top level of
-`matplotlib/matplotlib.github.com` and push to the default branch.
+```bash
+pip install -r requirements.txt
+make -Cdocs html
+
+
+```
 
 ## CSS cache-busting
 
