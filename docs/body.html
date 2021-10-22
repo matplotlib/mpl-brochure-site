@@ -129,30 +129,10 @@
           <!-- make these easier to visually differentiate !-->
           <!-- optional important news -->
           <h3>News</h3>
-          <div class="news__item--highlight">
-            <h5 class="date">March 30, 2021</h5>
-            <h4 class="title">Matplotlib 3.4.1 Released</h4>
-            <p>
-              This is the first bug-fix release for the 3.4 series and includes
-              critical bug fixes for 3D scatters.
-            </p>
-            <a href="" class="link--offsite">Matplotlib 3.4.1 Released</a>
-          </div>
-
-          <!-- START NEWS ITEMS -->
-          <div class="news__item">
-            <h5 class="date">March 30, 2021</h5>
-            <a href="" class="link--offsite">Matplotlib 3.4.0 release</a>
-          </div>
-
-          <div class="news__item">
-            <h5 class="date">March 11, 2021</h5>
-            <a href="" class="link--offsite">
-              Matplotlib 3.4.0 release candidate 3
-            </a>
-          </div>
+          
+          <d-topics-list discourse-url="https://discourse.matplotlib.org/" per-page="5">
+          </d-topics-list>
         </div>
-
         <!-- END NEWS ITEMS -->
         <!-- link to discourse -->
         <div class="news__discourse-link">
@@ -484,3 +464,4 @@
         </ul>
       </section>
       <script src="_static/script.js"></script>
+      <script src="http://discourse.matplotlib.org/javascripts/embed-topics.js"></script>
