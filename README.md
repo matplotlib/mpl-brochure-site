@@ -9,8 +9,6 @@ Temporarily served at https://matplotlib.org/mpl-brochure-site/
 ```bash
 pip install -r requirements.txt
 make -Cdocs html
-
-
 ```
 
 ## CSS cache-busting
