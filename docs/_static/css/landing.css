@@ -414,7 +414,7 @@ main {
 
 @media (min-width: 800px) {
   main {
-    margin-top: 50px;
+    margin-top: 20px;
     grid-template-columns:
       minmax(1em, auto) minmax(44px, 118px) minmax(44px, 118px)
       minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(
