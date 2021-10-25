@@ -1,6 +1,10 @@
 // accesible javascript tab switcher 
 // modified from https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
@@ -40,6 +44,15 @@ window.addEventListener("DOMContentLoaded", () => {
       tabs[tabFocus].focus();
     }
   });
+  ///////////////////////////////////////
+  // rotate images in images-rotate directory:
+  var ind = getRandomInt(images_rotate.length); 
+  var im = images_rotate[ind].image;
+  st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
+  var cap = images_rotate[ind].caption;
+  var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
+  st2 = '<div class="imrot-cap">'+ cap + '</div>'
+  document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
 });
 
 function changeTabs(e) {
@@ -68,3 +81,4 @@ function changeTabs(e) {
     .querySelector(`#${target.getAttribute("aria-controls")}`)
     .removeAttribute("hidden");
 }
+
