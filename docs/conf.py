@@ -1,5 +1,7 @@
 import datetime
 
+html_title = 'Matplotlib - Visualization with Python'
+
 # Configuration file for the Sphinx documentation builder for
 # matplotlib projects.
 
