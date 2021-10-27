@@ -2,7 +2,7 @@ import datetime
 
 # -- Project information -----------------------------------------------------
 
-html_title = 'Matplotlib - Visualization with Python'
+html_title = 'Visualization with Python'
 project = "Matplotlib landing page"
 copyright = (
      f"2012 - {datetime.datetime.now().year} The Matplotlib development team"
