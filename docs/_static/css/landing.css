@@ -147,12 +147,13 @@ a.link--offsite::after {
   background-color: var(--light-gray);
   border: none;
   height: 1px;
-  margin-bottom: 1.5em;
+  margin-bottom: 0em;
 }
 
 .rule--viridis {
   background-image: var(--viridis);
   height: 3px;
+  margin-bottom: 0em;
 }
 
 
@@ -414,7 +415,6 @@ main {
 
 @media (min-width: 800px) {
   main {
-    margin-top: 50px;
     grid-template-columns:
       minmax(1em, auto) minmax(44px, 118px) minmax(44px, 118px)
       minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(
@@ -441,7 +441,7 @@ main {
 
 @media (max-width: 799px) {
   main {
-    margin-top: 30px;
+    margin-top: 0px;
     grid-template-columns: 1em auto 1em;
     grid-template-areas:
       ". intro-text ."
@@ -672,7 +672,6 @@ a.button--green::after {
 }
 
 .placeholder.intro-area {
-  height: 540px;
 }
 
 .copywrite {
