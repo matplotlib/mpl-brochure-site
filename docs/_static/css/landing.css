@@ -479,6 +479,7 @@ main {
 }
 
 .grid__rule1 {
+  margin-top: 1em;
   grid-area: rule1;
 }
 
@@ -491,6 +492,7 @@ main {
 }
 
 .grid__rule2 {
+  margin-top: 1em;
   grid-area: rule2;
 }
 
@@ -507,6 +509,7 @@ main {
 }
 
 .grid__rule3 {
+  margin-top: 1em;
   grid-area: rule3;
 }
 
