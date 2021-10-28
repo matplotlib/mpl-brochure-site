@@ -612,6 +612,7 @@ a.button {
   background-color: var(--blue);
   padding: 15px 20px;
   width: fit-content;
+  width: -moz-fit-content;
   display: block;
   border-radius: var(--border-radius);
   color: var(--white);
