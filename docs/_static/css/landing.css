@@ -147,14 +147,14 @@ a.link--offsite::after {
   background-color: var(--light-gray);
   border: none;
   height: 1px;
-  margin-bottom: 1.5em;
+  margin-bottom: 0em;
 }
 
 .rule--viridis {
   background-image: var(--viridis);
   height: 3px;
+  margin-bottom: 0em;
 }
-
 
 /* Quicklinks */
 .quicklinks {
@@ -202,6 +202,7 @@ a.link--offsite::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .news__item:not(:last-of-type){
@@ -409,12 +410,11 @@ ul.mpl-links {
 /* layout */
 main {
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
 }
 
 @media (min-width: 800px) {
   main {
-    margin-top: 50px;
     grid-template-columns:
       minmax(1em, auto) minmax(44px, 118px) minmax(44px, 118px)
       minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(
@@ -441,7 +441,7 @@ main {
 
 @media (max-width: 799px) {
   main {
-    margin-top: 30px;
+    margin-top: 0px;
     grid-template-columns: 1em auto 1em;
     grid-template-areas:
       ". intro-text ."
@@ -468,6 +468,7 @@ main {
 }
 
 .grid__quicklinks {
+  margin-top: 2em;
   grid-area: quicklinks;
 }
 
@@ -478,6 +479,7 @@ main {
 }
 
 .grid__rule1 {
+  margin-top: 1em;
   grid-area: rule1;
 }
 
@@ -490,18 +492,24 @@ main {
 }
 
 .grid__rule2 {
+  margin-top: 1em;
   grid-area: rule2;
 }
 
 .grid__tools {
+  margin-top: 2em;
+  margin-bottom: 2em;
   grid-area: tools;
 }
 
 .grid__tools-switcher {
+  margin-top: 2em;
+  margin-bottom: 2em;
   grid-area: tool-switcher;
 }
 
 .grid__rule3 {
+  margin-top: 1em;
   grid-area: rule3;
 }
 
@@ -575,7 +583,7 @@ footer {
 
 .grid__tools-switcher__tabs {
   display: grid;
-  gap: 20px;
+  gap: 2em;
 }
 
 @media (min-width: 800px) {
@@ -673,7 +681,6 @@ a.button--green::after {
 }
 
 .placeholder.intro-area {
-  height: 540px;
 }
 
 .copywrite {
