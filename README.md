@@ -28,6 +28,6 @@ to
     <link rel="stylesheet" href="_static/mpl.css?v2" type="text/css" />
 ```
 
-The query parameter will be ignored when serving the file from the origin but
+The query parameter will be ignored when serving the file from the origin, but
 will be taken into consideration by both cloudflare and users browsers when
 identifying cache hits.
