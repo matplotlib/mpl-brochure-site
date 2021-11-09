@@ -377,6 +377,7 @@ ul.mpl-links,
 ul.release-docs {
   list-style-type: none;
   padding: 0;
+  margin-top: 1.33em;
 }
 
 ul.mpl-links li,
