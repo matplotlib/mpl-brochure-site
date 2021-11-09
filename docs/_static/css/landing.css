@@ -464,6 +464,7 @@ main {
 }
 
 .grid__intro {
+  margin-top: 4em;
   grid-area: intro;
 }
 
@@ -675,12 +676,17 @@ a.button--green::after {
   background-image: url("../images/arrow-right-solid-black.png");
 }
 
-/* FOR DEVELOPMENT ONLY */
-.placeholder {
-  background-color: var(--medium-gray);
+.imrot-img {
+  display: flex;  
+  margin: auto;
+  max-width:18em;
+  align-self: center;
 }
 
-.placeholder.intro-area {
+.imrot-cap {
+  text-align: center;
+  font-style: italic;
+  font-size:  large;
 }
 
 .copywrite {

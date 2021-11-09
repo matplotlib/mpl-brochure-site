@@ -11,6 +11,15 @@ pip install -r requirements.txt
 make -Cdocs html
 ```
 
+## Maintain image rotator:
+
+Right now the image rotator plots the sphinx-gallery in ``plot_types`` and 
+rotates through those images.  See 
+``docs/_static/images-rotate/_generate_images.py``. 
+Note that the location of the matplotlib source install is assumed to be at the 
+same level as the install of ``mpl-brochure-site``, so modify if that is not the 
+case.  
+
 ## CSS cache-busting
 
 If you change the css files it is important to also change the query
