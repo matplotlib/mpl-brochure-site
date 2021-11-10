@@ -73,12 +73,14 @@ function changeTabs(e) {
     .removeAttribute("hidden");
 }
 
-///////////////////////////////////////
-// rotate images in images-rotate directory:
-var ind = getRandomInt(images_rotate.length); 
-var im = images_rotate[ind].image;
-st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
-var cap = images_rotate[ind].caption;
-var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
-st2 = '<div class="imrot-cap">'+ cap + '</div>'
-document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
+document.addEventListener("DOMContentLoaded", function(event) { 
+  ///////////////////////////////////////
+  // rotate images in images-rotate directory:
+  var ind = getRandomInt(images_rotate.length); 
+  var im = images_rotate[ind].image;
+  st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
+  var cap = images_rotate[ind].caption;
+  var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
+  st2 = '<div class="imrot-cap">'+ cap + '</div>'
+  document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
+});
