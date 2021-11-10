@@ -3,7 +3,7 @@ var images_rotate = [
     {"image": "imshow300.png", "caption": "imshow(Z)", "link": "plot_types/arrays/imshow.html"},
     {"image": "pcolormesh300.png", "caption": "pcolormesh(X, Y, Z)", "link": "plot_types/arrays/pcolormesh.html"},
     {"image": "contourf300.png", "caption": "contourf(X, Y, Z)", "link": "plot_types/arrays/contourf.html"},
-    {"image": "barbs300.png", "caption": "barbs(X, Y U, V)", "link": "plot_types/arrays/barbs.html"},
+    {"image": "barbs300.png", "caption": "barbs(X, Y, U, V)", "link": "plot_types/arrays/barbs.html"},
     {"image": "contour300.png", "caption": "contour(X, Y, Z)", "link": "plot_types/arrays/contour.html"},
     {"image": "streamplot300.png", "caption": "streamplot(X, Y, U, V)", "link": "plot_types/arrays/streamplot.html"},
     {"image": "plot300.png", "caption": "plot(x, y)", "link": "plot_types/basic/plot.html"},

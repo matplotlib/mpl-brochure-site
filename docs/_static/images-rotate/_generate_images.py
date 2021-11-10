@@ -32,4 +32,4 @@ for d in dirs:
 
 stout +=  '];'
 
-open('./info.js', 'w').write(stout)
+open('../images-rotate-info.js', 'w').write(stout)
