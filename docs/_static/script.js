@@ -5,7 +5,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function(event) { 
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 
@@ -44,6 +44,17 @@ window.addEventListener("DOMContentLoaded", () => {
       tabs[tabFocus].focus();
     }
   });
+
+  ///////////////////////////////////////
+  // rotate images in images-rotate directory:
+  var ind = getRandomInt(images_rotate.length); 
+  var im = images_rotate[ind].image;
+  st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
+  var cap = images_rotate[ind].caption;
+  var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
+  st2 = '<div class="imrot-cap">'+ cap + '</div>'
+  document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
+
 });
 
 function changeTabs(e) {
@@ -73,14 +84,3 @@ function changeTabs(e) {
     .removeAttribute("hidden");
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  ///////////////////////////////////////
-  // rotate images in images-rotate directory:
-  var ind = getRandomInt(images_rotate.length); 
-  var im = images_rotate[ind].image;
-  st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
-  var cap = images_rotate[ind].caption;
-  var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
-  st2 = '<div class="imrot-cap">'+ cap + '</div>'
-  document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
-});
