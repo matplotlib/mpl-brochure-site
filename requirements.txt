@@ -1,2 +1,3 @@
 sphinx
 mpl-sphinx-theme
+jinja2>3
