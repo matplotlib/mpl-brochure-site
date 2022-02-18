@@ -13,7 +13,7 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 show:
-	@python -c "import webbrowser; webbrowser.open_new_tab('file://$(shell pwd)/build/html/index.html')"
+	@python -c "import webbrowser; webbrowser.open_new_tab('file://$(shell pwd)/_build/html/index.html')"
 
 .PHONY: help Makefile
 
