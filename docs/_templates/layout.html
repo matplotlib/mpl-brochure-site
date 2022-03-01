@@ -34,6 +34,7 @@
 
 {% block body_tag %}
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    <div class="document">
 {%- endblock %}
 {%- block content %}
     {# Added to support a banner with an alert #}
@@ -56,4 +57,6 @@
 
 {%- block footer %}
 {%- include "landing_footer.html" %}
+  {# Closes the div added in body_tag above. #}
+  </div>
 {%- endblock %}

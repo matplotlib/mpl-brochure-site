@@ -409,7 +409,20 @@ ul.mpl-links {
 }
 
 /* layout */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.document {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 main {
+  flex-grow: 1;
   display: grid;
   column-gap: 20px;
 }
@@ -458,6 +471,10 @@ main {
       ". support ."
       "footer footer footer";
   }
+}
+
+.grid__full-page {
+  grid-area: intro-start / intro-start / footer-start / intro-text-end;
 }
 
 .grid__intro-text {
