@@ -417,17 +417,10 @@ main {
 @media (min-width: 800px) {
   main {
     grid-template-columns:
-      minmax(1em, auto) minmax(44px, 118px) minmax(44px, 118px)
-      minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(
-        44px,
-        118px
-      )
-      minmax(44px, 118px) minmax(44px, 118px) minmax(44px, 118px) minmax(
-        44px,
-        118px
-      )
-      minmax(44px, 118px) minmax(44px, 118px) minmax(1em, auto);
+      minmax(1em, auto) repeat(12, minmax(44px, 118px)) minmax(1em, auto);
     grid-template-areas:
+      /* These are mostly two sections side-by-side (6 columns each), except
+       * for tools+tool-switcher which are 1/3+2/3. */
       ". intro intro intro intro intro intro intro-text intro-text intro-text intro-text intro-text intro-text ."
       ". quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks ."
       "rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1"
