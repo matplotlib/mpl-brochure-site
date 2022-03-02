@@ -1,3 +1,4 @@
-sphinx
-mpl-sphinx-theme
 jinja2>3
+mpl-sphinx-theme
+sphinx
+sphinx-notfound-page
