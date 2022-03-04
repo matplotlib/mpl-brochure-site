@@ -11,6 +11,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build
         run: make -Cdocs html
+      - name: remove inventory
+        run: rm ./docs/_build/html/objects.inv
       - name: Publish
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v3
