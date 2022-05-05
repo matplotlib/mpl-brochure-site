@@ -1,4 +1,4 @@
-// accesible javascript tab switcher 
+// accessible JavaScript tab switcher
 // modified from https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
 
 function getRandomInt(max) {
