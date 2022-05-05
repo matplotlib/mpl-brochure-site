@@ -1,4 +1,4 @@
-// accesible javascript tab switcher 
+// accessible JavaScript tab switcher
 // modified from https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
 
 function getRandomInt(max) {
@@ -48,12 +48,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ///////////////////////////////////////
   // rotate images in images-rotate directory:
   var ind = getRandomInt(images_rotate.length); 
-  var im = images_rotate[ind].image;
-  st = '<img class="imrot-img" src="_static/images-rotate/' +im+'" />'
-  var cap = images_rotate[ind].caption;
-  var link = "https://matplotlib.org/stable/" + images_rotate[ind].link;
-  st2 = '<div class="imrot-cap">'+ cap + '</div>'
-  document.getElementById('image_rotator').innerHTML = '<a href="' + link + '"> ' + st + st2 + '</a>';
+  var info = images_rotate[ind];
+  var img_src = "_static/images-rotate/" + info.image;
+  var caption = info.caption;
+  var link = "https://matplotlib.org/stable/" + info.link;
+  var html = '<a href="' + link + '">' +
+    '<img class="imrot-img" src="' + img_src + '" aria-labelledby="sample-plot-caption"/>' +
+    '<div class="imrot-cap" id="sample-plot-caption">' + caption + '</div>' +
+    '</a>';
+  document.getElementById('image_rotator').innerHTML = html;
 
 });
 
