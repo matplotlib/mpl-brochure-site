@@ -3,11 +3,21 @@ version: 2.1
 orbs:
   python: circleci/python@0.2.1
 
+commands:
+  install_dev_theme:
+    steps:
+      - run:
+          name: Install mpl-sphinx-theme from git....
+          command: |
+            python -m pip install --no-deps --user \
+                git+https://github.com/matplotlib/mpl-sphinx-theme.git
+
 jobs:
   build_docs:
     executor: python/default
     steps:
       - checkout
+      - install_dev_theme
       - python/install-deps
       - run:
           name: Build docs
