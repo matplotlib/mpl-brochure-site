@@ -645,14 +645,11 @@ a.button {
 
 .button::after,
 a.button::after {
-  content: "";
+  content: "\f061"; /* fa-arrow-right */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   margin-left: 60px;
-  background: url("../images/arrow-right-solid-white.png") no-repeat 0 0;
-  background-size: 13px 15px;
-  height: 15px;
-  width: 15px;
   display: inline-block;
-  vertical-align: middle;
   transition: margin 0.2s ease-out;
 }
 
@@ -684,7 +681,9 @@ a.button--green {
 
 .button--green::after,
 a.button--green::after {
-  background-image: url("../images/arrow-right-solid-black.png");
+  content: "\f061"; /* fa-arrow-right */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 .imrot-img {
