@@ -5,7 +5,7 @@ import datetime
 html_title = 'Visualization with Python'
 project = "Matplotlib landing page"
 copyright = (
-     f"2012 - {datetime.datetime.now().year} The Matplotlib development team"
+     f"© 2012 – {datetime.datetime.now().year} The Matplotlib development team"
  )
 author = "Matplotlib Developers"
 
