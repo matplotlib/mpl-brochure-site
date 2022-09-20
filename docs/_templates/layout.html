@@ -3,17 +3,36 @@
 {%- import "static/webpack-macros.html" as _webpack with context %}
 
 {% block body_tag %}
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    <div class="document">
+  {{- super() }}
+  <div class="document">
 {%- endblock %}
 {%- block content %}
-    {# Added to support a banner with an alert #}
-    <div class="container-fluid" id="banner"></div>
+  {# checkbox to toggle primary sidebar #}
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
 
-    {% block docs_navbar %}{{ super() }}{% endblock %}
-    <main role="main">
-      {% block body %} {% endblock %}
-    </main>
+  {# Checkboxes to toggle the secondary sidebar #}
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  {# A search field pop-up that will only show when the search button is clicked #}
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      {% include "../components/search-field.html" %}
+    </div>
+  </div>
+
+  {%- if theme_announcement -%}
+  <div class="bd-header-announcement container-fluid" id="header-announcement">
+    {% include "sections/announcement.html" %}
+  </div>
+  {%- endif %}
+
+  {% block docs_navbar %}{{ super() }}{% endblock %}
+  <main role="main">
+    {% block body %} {% endblock %}
+  </main>
 
   {%- block scripts_end %}{{ super() }}{%- endblock %}
 {%- endblock %}
