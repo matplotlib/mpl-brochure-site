@@ -1,4 +1,6 @@
 import datetime
+import subprocess
+from urllib.parse import urlsplit, urlunsplit
 
 # -- Project information -----------------------------------------------------
 
@@ -30,7 +32,60 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# General substitutions.
+try:
+    SHA = subprocess.check_output(
+        ['git', 'rev-parse', 'HEAD']).decode('utf-8').strip()
+# Catch the case where git is not installed locally, and use the setuptools_scm
+# version number instead.
+except (subprocess.CalledProcessError, FileNotFoundError):
+    import hashlib
+    import matplotlib
+    import mpl_sphinx_theme
+    import pydata_sphinx_theme
+    SHA = hashlib.sha256(
+        (f'{matplotlib.__version__} '
+         f'{mpl_sphinx_theme.__version__} '
+         f'{pydata_sphinx_theme.__version__}').encode('utf-8')).hexdigest()
+SHA = SHA[:20]
+
+
 # -- Options for HTML output -------------------------------------------------
+
+def add_html_cache_busting(app, pagename, templatename, context, doctree):
+    """
+    Add cache busting query on CSS and JavaScript assets.
+
+    This adds the Matplotlib version as a query to the link reference in the
+    HTML, if the path is not absolute (i.e., it comes from the `_static`
+    directory) and doesn't already have a query.
+    """
+    from sphinx.builders.html import Stylesheet, JavaScript
+
+    css_tag = context['css_tag']
+    js_tag = context['js_tag']
+
+    def css_tag_with_cache_busting(css):
+        if isinstance(css, Stylesheet) and css.filename is not None:
+            url = urlsplit(css.filename)
+            if not url.netloc and not url.query:
+                url = url._replace(query=SHA)
+                css = Stylesheet(urlunsplit(url), priority=css.priority,
+                                 **css.attributes)
+        return css_tag(css)
+
+    def js_tag_with_cache_busting(js):
+        if isinstance(js, JavaScript) and js.filename is not None:
+            url = urlsplit(js.filename)
+            if not url.netloc and not url.query:
+                url = url._replace(query=SHA)
+                js = JavaScript(urlunsplit(url), priority=js.priority,
+                                **js.attributes)
+        return js_tag(js)
+
+    context['css_tag'] = css_tag_with_cache_busting
+    context['js_tag'] = js_tag_with_cache_busting
+
 
 html_css_files = ['css/normalize.css', 'css/landing.css']
 html_theme = "mpl_sphinx_theme"
@@ -52,3 +107,10 @@ html_static_path = ["_static"]
 
 # Prefix added to all the URLs generated in the 404 page.
 notfound_urls_prefix = '/'
+
+
+# -----------------------------------------------------------------------------
+# Sphinx setup
+# -----------------------------------------------------------------------------
+def setup(app):
+    app.connect('html-page-context', add_html_cache_busting, priority=1000)
