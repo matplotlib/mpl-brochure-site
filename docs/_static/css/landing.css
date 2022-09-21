@@ -65,9 +65,9 @@
 
 /* callout boxes */
 .callout {
-  border-left: solid 1px var(--light-gray);
-  border-bottom: solid 1px var(--light-gray);
-  border-right: solid 1px var(--light-gray);
+  border-left: solid 1px var(--pst-color-border);
+  border-bottom: solid 1px var(--pst-color-border);
+  border-right: solid 1px var(--pst-color-border);
   border-bottom-right-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -113,7 +113,7 @@
 }
 
 .callout__icon {
-  color: var(--logo-blue);
+  color: var(--pst-color-primary);
   font-size: 2em;
   margin: auto 10px auto 0;
 }
@@ -144,7 +144,7 @@ a.link--offsite::after {
 /* Rulers */
 .rule {
   width: 100%;
-  background-color: var(--light-gray);
+  background-color: var(--pst-color-border);
   border: none;
   height: 1px;
   margin-bottom: 0em;
@@ -247,7 +247,7 @@ a.link--offsite::after {
   padding: 0.5em 0;
   background-color: transparent;
   font-family: var(--heading-font);
-  color: var(--logo-blue);
+  color: var(--pst-color-link);
   font-size: var(--heading-4);
   font-weight: var(--bold);
   transition: left 0.2s ease-out;
@@ -260,9 +260,9 @@ a.link--offsite::after {
 }
 
 .tabs__content {
-  border-top: solid 1px var(--light-gray);
-  border-bottom: solid 1px var(--light-gray);
-  border-right: solid 1px var(--light-gray);
+  border-top: solid 1px var(--pst-color-border);
+  border-bottom: solid 1px var(--pst-color-border);
+  border-right: solid 1px var(--pst-color-border);
   flex-grow: 1;
   padding: 20px 40px 20px 50px;
   position: relative;
