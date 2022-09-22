@@ -180,7 +180,7 @@ a.link--offsite::after {
 }
 
 .quicklinks__icon {
-  width: 75px;
+  width: 1in;
   display: block;
   margin-bottom: 10px;
 }
