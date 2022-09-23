@@ -51,6 +51,7 @@
   --viridis-green: linear-gradient(90deg, #42be71, #bddf26);
 
   --viridis-purple-vert: linear-gradient(180deg, #440154, #355f8d);
+  --viridis-purple-invert: linear-gradient(180deg, #355f8d, #440154);
   --viridis-blue-vert: linear-gradient(180deg, #414487, #21908d);
   /* END BACKGROUND GRADIENTS */
   
@@ -353,6 +354,12 @@ a.link--offsite::after {
 footer {
   color: var(--alpha-white);
   background-image: var(--viridis-purple-vert);
+}
+html[data-theme=light] footer {
+  background-image: var(--viridis-purple-vert);
+}
+html[data-theme=dark] footer {
+  background-image: var(--viridis-purple-invert);
 }
 
 footer a {
