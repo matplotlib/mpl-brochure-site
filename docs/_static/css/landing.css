@@ -437,14 +437,21 @@ html, body {
     align-items: stretch;
 }
 
-main {
+@media (min-width: 960px) {
+  /* Undo pydata-sphinx-theme's max width setting. */
+  div.bd-container__inner.bd-page-width {
+    max-width: inherit;
+  }
+}
+
+main.bd-main {
   flex-grow: 1;
   display: grid;
   column-gap: 20px;
 }
 
 @media (min-width: 800px) {
-  main {
+  main.bd-main {
     grid-template-columns:
       minmax(1em, auto) repeat(12, minmax(44px, 118px)) minmax(1em, auto);
     grid-template-areas:
@@ -463,7 +470,7 @@ main {
 }
 
 @media (max-width: 799px) {
-  main {
+  main.bd-main {
     margin-top: 0px;
     grid-template-columns: 1em auto 1em;
     grid-template-areas:
