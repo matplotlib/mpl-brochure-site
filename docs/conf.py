@@ -43,6 +43,7 @@ html_theme_options = {
     },
     "navbar_links": "server-stable",
     "footer_items": ["landing_footer"],
+    "page_sidebar_items": [],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
