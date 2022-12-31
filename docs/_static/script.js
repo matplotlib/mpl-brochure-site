@@ -5,17 +5,17 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 
   // set currently active tab to 0
-  tabList.setAttribute("data-current-tab", 0)
+  tabList.setAttribute("data-current-tab", 0);
 
   // Add a click event handler to each tab
   tabs.forEach((tab, i) => {
     tab.addEventListener("click", changeTabs);
-    tab.setAttribute("data-tab-count", i)
+    tab.setAttribute("data-tab-count", i);
   });
 
   // Enable arrow navigation between tabs in the tab list
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   ///////////////////////////////////////
   // rotate images in images-rotate directory:
-  var ind = getRandomInt(images_rotate.length); 
+  var ind = getRandomInt(images_rotate.length);
   var info = images_rotate[ind];
   var img_src = "_static/images-rotate/" + info.image;
   var caption = info.caption;
@@ -66,7 +66,7 @@ function changeTabs(e) {
   const grandparent = parent.parentNode;
 
   // set attribute for currently active tab for setting the location of the pointer triangle
-  parent.setAttribute("data-current-tab", e.target.getAttribute("data-tab-count"))
+  parent.setAttribute("data-current-tab", e.target.getAttribute("data-tab-count"));
 
   // Remove all current selected tabs
   parent
@@ -86,4 +86,3 @@ function changeTabs(e) {
     .querySelector(`#${target.getAttribute("aria-controls")}`)
     .removeAttribute("hidden");
 }
-
