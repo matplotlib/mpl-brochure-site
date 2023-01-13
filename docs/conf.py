@@ -15,6 +15,7 @@ author = "Matplotlib Developers"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinxcontrib.jquery',  # Remove when requiring pydata-sphinx-theme>=0.13.
     'notfound.extension',
 ]
 
