@@ -3,3 +3,4 @@ mpl-sphinx-theme~=3.6.0
 pygments>=2.7
 sphinx
 sphinx-notfound-page
+sphinxcontrib.jquery==2.0.0  # Remove when requiring pydata-sphinx-theme>=0.13.
