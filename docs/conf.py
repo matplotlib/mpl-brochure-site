@@ -17,7 +17,6 @@ author = "Matplotlib Developers"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.jquery',  # Remove when requiring pydata-sphinx-theme>=0.13.
     'notfound.extension',
 ]
 
@@ -92,14 +91,9 @@ html_css_files = ['css/normalize.css', 'css/landing.css']
 html_theme = "mpl_sphinx_theme"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
-    "logo": {
-        "link": "https://matplotlib.org/stable/",
-        "image_light": "images/logo2.svg",
-        "image_dark": "images/logo_dark.svg",
-    },
-    "navbar_links": "server-stable",
-    "footer_items": ["landing_footer"],
-    "page_sidebar_items": [],
+    "navbar_links": ("absolute", "server-stable"),
+    "footer_start": ["landing_footer"],
+    "secondary_sidebar_items": [],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
