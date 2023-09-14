@@ -2,5 +2,5 @@ jinja2>3
 mpl-sphinx-theme~=3.7.1
 pydata-sphinx-theme~=0.13.0
 pygments>=2.7
-sphinx
+sphinx>=7.1
 sphinx-notfound-page
