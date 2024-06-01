@@ -330,4 +330,6 @@
                Donate to Matplotlib
 
 .. raw:: html
-   :file: body.html
+
+   <script src="_static/images-rotate-info.js"></script>
+   <script src="_static/script.js"></script>

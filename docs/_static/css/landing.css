@@ -352,62 +352,6 @@ html, body {
     align-items: stretch;
 }
 
-@media (min-width: 960px) {
-  /* Undo pydata-sphinx-theme's max width setting. */
-  div.bd-container__inner.bd-page-width {
-    max-width: inherit;
-  }
-}
-
-main.bd-main {
-  flex-grow: 1;
-  display: grid;
-  column-gap: 20px;
-}
-
-@media (min-width: 800px) {
-  main.bd-main {
-    grid-template-columns:
-      minmax(1em, auto) repeat(12, minmax(44px, 118px)) minmax(1em, auto);
-    grid-template-areas:
-      /* These are mostly two sections side-by-side (6 columns each), except
-       * for tools+tool-switcher which are 1/3+2/3. */
-      ". intro intro intro intro intro intro intro-text intro-text intro-text intro-text intro-text intro-text ."
-      ". quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks quicklinks ."
-      "rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1 rule1"
-      ". news news news news news news resources resources resources resources resources resources ."
-      "rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2 rule2"
-      ". tools tools tools tools tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher tool-switcher ."
-      "rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3 rule3"
-      ". support support support support support support support support support support support support ."
-      "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
-  }
-}
-
-@media (max-width: 799px) {
-  main.bd-main {
-    margin-top: 0px;
-    grid-template-columns: 1em auto 1em;
-    grid-template-areas:
-      ". intro-text ."
-      ". intro ."
-      ". quicklinks  ."
-      "rule1 rule1 rule1"
-      ". resources ."
-      ". news ."
-      "rule2 rule2 rule2"
-      ". tools ."
-      ". tool-switcher ."
-      "rule3 rule3 rule3"
-      ". support ."
-      "footer footer footer";
-  }
-}
-
-.grid__full-page {
-  grid-area: intro-start / intro-start / footer-start / intro-text-end;
-}
-
 footer {
   grid-area: footer;
   display: grid;
@@ -518,7 +462,7 @@ a.button-green::after {
 }
 
 .imrot-img {
-  display: flex;  
+  display: flex;
   margin: auto;
   max-width:18em;
   align-self: center;
