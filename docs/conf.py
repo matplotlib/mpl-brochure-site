@@ -51,3 +51,18 @@ html_static_path = ["_static"]
 
 # Prefix added to all the URLs generated in the 404 page.
 notfound_urls_prefix = '/'
+
+# -- Options for sphinx-design ------------------------------------------------
+
+sd_custom_directives = {
+    "quicklink": {
+        "inherit": "grid-item-card",
+        "options": {
+            "class-card": "quicklink sd-border-0",
+            "class-img-top": "dark-light",
+            "margin": "5",
+            "shadow": "none",
+            "text-align": "center",
+        },
+    }
+}
