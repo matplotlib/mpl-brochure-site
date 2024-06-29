@@ -260,5 +260,74 @@
 
    .. empty
 
+.. grid::
+
+   .. grid-item-card:: Support Matplotlib
+      :class-card: sd-border-0
+      :class-title: mpl-card-title
+      :shadow: none
+
+      .. grid::
+
+         .. grid-item-card:: Contribute
+            :class-card: callout callout-purple sd-border-top-0
+            :class-title: mpl-callout-title
+            :class-body: sd-px-4 sd-py-4
+
+            Matplotlib is a community project maintained for and by its users
+
+            You can help by answering questions `on discourse
+            <https://discourse.matplotlib.org>`__, reporting a bug or requesting a
+            feature `on GitHub <https://github.com/matplotlib/matplotlib/issues>`__, or
+            improving the `documentation and code
+            <https://matplotlib.org/stable/devel/index.html>`__!
+
+            .. button-link:: https://discourse.matplotlib.org
+               :class: link-offsite
+
+               Join us on Discourse
+
+            .. button-link:: https://github.com/matplotlib/matplotlib
+               :class: link-offsite
+
+               Join us on GitHub
+
+         .. grid-item-card:: Cite
+            :class-card: callout callout-blue sd-border-top-0
+            :class-title: mpl-callout-title
+            :class-body: sd-px-4 sd-py-4
+
+            Matplotlib is the result of development efforts by John Hunter (1968–2012)
+            and the project's `many contributors
+            <https://matplotlib.org/stable/project/credits.html>`__.
+
+            If Matplotlib contributes to a project that leads to a scientific
+            publication, please acknowledge this work by citing the project!
+
+            .. button-link:: https://matplotlib.org/stable/project/citing.html
+               :class: link-offsite
+
+               Ready made citation
+
+         .. grid-item-card:: Donate
+            :class-card: callout callout-teal sd-border-top-0
+            :class-title: mpl-callout-title
+            :class-body: sd-px-4 sd-py-4
+
+            If you would like to support Matplotlib financially you can donate by
+            `sponsoring Matplotlib on GitHub <https://github.com/sponsors/matplotlib>`__
+            or making a (USA) tax-deductible donation `through NumFOCUS
+            <https://numfocus.org/donate-to-matplotlib>`__.
+
+            .. button-link:: https://github.com/sponsors/matplotlib
+               :class: link-offsite
+
+               Sponsor on GitHub
+
+            .. button-link:: https://numfocus.org/donate-to-matplotlib
+               :class: link-offsite
+
+               Donate to Matplotlib
+
 .. raw:: html
    :file: body.html
