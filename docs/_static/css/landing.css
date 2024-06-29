@@ -66,6 +66,30 @@
   font-weight: var(--regular) !important;
 }
 
+.mpl-card-title {
+  color: var(--pst-color-text-base);
+  font-family: var(--pst-font-family-heading);
+  font-size: var(--pst-font-size-h3);
+  font-weight: var(--regular) !important;
+}
+
+.mpl-card-resources ul {
+  list-style-type: none;
+  padding: 0;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.mpl-card-resources ul li {
+  display: table-row;
+}
+
+.mpl-card-resources ul li p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* callout boxes */
 .callout {
   border-left: solid 1px var(--pst-color-border);
@@ -77,15 +101,6 @@
   margin-bottom: 20px;
   padding: 28px 20px 20px;
   position: relative;
-}
-
-.callout__list {
-  display: flex;
-  flex-direction: row;
-}
-
-.callout__list p{
-  margin: 1em 0;
 }
 
 .callout::before {
@@ -115,7 +130,7 @@
   background-image: var(--viridis-green);
 }
 
-.callout__icon {
+.callout-icon {
   color: var(--pst-color-primary);
   font-size: 2em;
   margin: auto 10px auto 0;
@@ -124,6 +139,7 @@
 .callout > * {
   margin-top: 0;
 }
+
 /* offsite links */
 a.link--offsite {
   font-size: var(--pst-font-size-h5);
@@ -133,7 +149,13 @@ a.link--offsite {
   transition: left 0.2s ease-in-out;
 }
 
-a.link--offsite::after {
+a.link-offsite, div.link-offsite a {
+  font-size: var(--pst-font-size-h5);
+  padding-left: 0;
+  transition: left 0.2s ease-in-out;
+}
+
+a.link--offsite::after, a.link-offsite::after, div.link-offsite a::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -176,22 +198,20 @@ a.link--offsite::after {
 }
 
 /* News */
-.news {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.news-item:not(:last-of-type) {
   margin-bottom: 2em;
 }
 
-.news__item:not(:last-of-type){
-  margin-bottom: 2em;
-}
-
-.news__item--highlight, .news__item:last-of-type {
+.news-item-highlight, .news-item:last-of-type {
   margin-bottom: 40px;
 }
 
-.news__item .date, .news__item--highlight .date{
+.news-item-highlight p:first-of-type, .news-item p:first-of-type {
+  margin-bottom: 0;
+}
+
+.news-item .date, .news-item-highlight .date {
   margin: 1em 0 .5em;
 }
 
@@ -473,19 +493,6 @@ main.bd-main {
 
 .grid__full-page {
   grid-area: intro-start / intro-start / footer-start / intro-text-end;
-}
-
-.grid__resources {
-  grid-area: resources;
-}
-
-.grid__news {
-  grid-area: news;
-}
-
-.grid__rule2 {
-  margin-top: 1em;
-  grid-area: rule2;
 }
 
 .grid__tools {
