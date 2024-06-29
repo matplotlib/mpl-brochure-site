@@ -64,15 +64,6 @@
   --shadow: 0px 2px 2px rgba(0, 0, 0, 0.11);
 }
 
-/* Remove the filter added by pydata-sphinx-theme.
- * NOTE: Delete this CSS when using a pydata-sphinx-theme that contains
- * https://github.com/pydata/pydata-sphinx-theme/pull/942
- * https://github.com/pydata/pydata-sphinx-theme/pull/914
- * */
-html[data-theme=dark] img.only-dark, html[data-theme=dark] img.dark-light {
-  filter: none;
-}
-
 /* callout boxes */
 .callout {
   border-left: solid 1px var(--pst-color-border);
