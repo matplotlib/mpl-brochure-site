@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     '<img class="imrot-img" src="' + img_src + '" aria-labelledby="sample-plot-caption"/>' +
     '<div class="imrot-cap" id="sample-plot-caption">' + caption + '</div>' +
     '</a>';
-  document.getElementById('image_rotator').innerHTML = html;
+  document.getElementById('image-rotator').innerHTML = html;
 
 });
 

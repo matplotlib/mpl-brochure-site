@@ -58,6 +58,14 @@
   --shadow: 0px 2px 2px rgba(0, 0, 0, 0.11);
 }
 
+/* Introductory title. */
+.intro-title {
+  color: var(--pst-color-primary);
+  font-family: var(--pst-font-family-heading);
+  font-size: var(--pst-font-size-h2);
+  font-weight: var(--regular) !important;
+}
+
 /* callout boxes */
 .callout {
   border-left: solid 1px var(--pst-color-border);
@@ -493,15 +501,6 @@ main.bd-main {
   grid-area: intro-start / intro-start / footer-start / intro-text-end;
 }
 
-.grid__intro-text {
-  grid-area: intro-text;
-}
-
-.grid__intro {
-  margin-top: 4em;
-  grid-area: intro;
-}
-
 .grid__quicklinks {
   margin-top: 2em;
   grid-area: quicklinks;
@@ -657,6 +656,7 @@ a.button {
   width: fit-content;
   width: -moz-fit-content;
   display: block;
+  border: none;
   border-radius: var(--border-radius);
   color: var(--white);
   margin: 1em 0;
@@ -685,30 +685,30 @@ a.button:hover::after {
   margin-left: 80px;
 }
 
-.button--purple,
-a.button--purple {
+.button-purple,
+a.button-purple {
   background: var(--viridis-purple);
 }
 
-.button--blue,
-a.button--blue {
+.button-blue,
+a.button-blue {
   background: var(--viridis-blue);
 }
 
-.button--teal,
-a.button--teal {
+.button-teal,
+a.button-teal {
   background: var(--viridis-teal);
 }
 
-.button--green,
-a.button--green,
-a.button--green:hover {
+.button-green,
+a.button-green,
+a.button-green:hover {
   background: var(--viridis-green);
   color: var(--black);
 }
 
-.button--green::after,
-a.button--green::after {
+.button-green::after,
+a.button-green::after {
   content: "\f061"; /* fa-arrow-right */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
