@@ -161,5 +161,104 @@
 
    .. empty:
 
+.. grid::
+   :gutter: 1
+
+   .. grid-item-card:: Domain Specific Tools
+      :class-card: sd-border-0 sd-mt-5
+      :class-title: mpl-card-title
+      :class-footer: link-offsite
+      :shadow: none
+
+      A large number of third party packages extend and build on Matplotlib
+      functionality, including several higher-level plotting interfaces (seaborn,
+      HoloViews, ggplot, ...), and a projection and mapping toolkit (Cartopy).
+
+      +++
+      `More Domain-Specific Tools <https://matplotlib.org/mpl-third-party/>`__
+
+   .. grid-item::
+
+      .. tab-set::
+         :class: tabs tools
+
+         .. tab-item:: seaborn
+            :class-label: tabs-tab
+            :selected:
+
+            .. card::
+               :class-card: sd-border-0
+               :class-header: mpl-card-title
+               :class-footer: link-offsite
+               :shadow: none
+
+               seaborn is a high level interface for drawing statistical graphics with
+               Matplotlib. It aims to make visualization a central part of exploring and
+               understanding complex datasets.
+               +++
+               `statistical data visualization <https://seaborn.pydata.org/>`__
+
+         .. tab-item:: Cartopy
+            :class-label: tabs-tab
+
+            .. card::
+               :class-card: sd-border-0
+               :class-header: mpl-card-title
+               :class-footer: link-offsite
+               :shadow: none
+
+               Cartopy is a Python package designed for geospatial data processing in
+               order to produce maps and other geospatial data analyses.
+               +++
+               `Cartopy <https://scitools.org.uk/cartopy/docs/latest/>`__
+
+         .. tab-item:: DNA Features Viewer
+            :class-label: tabs-tab
+
+            .. card::
+               :class-card: sd-border-0
+               :class-header: mpl-card-title
+               :class-footer: link-offsite
+               :shadow: none
+
+               DNA Features Viewer is a Python library to visualize DNA features, e.g.
+               from GenBank or Gff files, or Biopython SeqRecords.
+               +++
+               `DNA Features Viewer
+               <https://github.com/Edinburgh-Genome-Foundry/DnaFeaturesViewer>`__
+
+         .. tab-item:: plotnine
+            :class-label: tabs-tab
+
+            .. card::
+               :class-card: sd-border-0
+               :class-header: mpl-card-title
+               :class-footer: link-offsite
+               :shadow: none
+
+               plotnine is an implementation of a grammar of graphics in Python. The
+               grammar allows users to compose plots by explicitly mapping data to the
+               visual objects that make up the plot.
+               +++
+               `plotnine <https://plotnine.readthedocs.io/en/stable/>`__
+
+         .. tab-item:: WCS Axes
+            :class-label: tabs-tab
+
+            .. card::
+               :class-card: sd-border-0
+               :class-header: mpl-card-title
+               :class-footer: link-offsite
+               :shadow: none
+
+               WCSAxes is a framework for making plots of Astronomical data in
+               Matplotlib.
+               +++
+               `WCSAxes <https://docs.astropy.org/en/stable/visualization/wcsaxes/>`__
+
+.. div:: rule rule-viridis
+
+   .. empty
+
 .. raw:: html
    :file: body.html
