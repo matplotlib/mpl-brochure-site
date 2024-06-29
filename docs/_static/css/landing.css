@@ -1,10 +1,4 @@
 /* all icons from https://fontawesome.com/ */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
   /* START COLOR PALETTE */
 
@@ -54,7 +48,7 @@
   --viridis-purple-invert: linear-gradient(180deg, #355f8d, #440154);
   --viridis-blue-vert: linear-gradient(180deg, #414487, #21908d);
   /* END BACKGROUND GRADIENTS */
-  
+
   /* FONTS */
   --regular: 400;
   --bold: 700;
