@@ -181,7 +181,7 @@ a.link--offsite::after {
 }
 
 @media (max-width: 700px) {
-  .quicklink-icon {
+  .quicklinks__icon {
     width: 60px;
   }
   .quicklinks a {
@@ -210,10 +210,6 @@ a.link--offsite::after {
 
 .news__item .date, .news__item--highlight .date{
   margin: 1em 0 .5em;
-}
-
-.news__item--highlight .title{
-  margin: .5em 0 1em;
 }
 
 .date{
