@@ -1,14 +1,17 @@
 version: 2.1
 
 orbs:
-  python: circleci/python@0.2.1
+  # https://circleci.com/developer/orbs/orb/circleci/python
+  python: circleci/python@2.1.1
 
 jobs:
   build_docs:
-    executor: python/default
+    executor:
+      name: python/default
+      tag: '3.10'
     steps:
       - checkout
-      - python/install-deps
+      - python/install-packages
       - run:
           name: Build docs
           command: cd docs/ && make html

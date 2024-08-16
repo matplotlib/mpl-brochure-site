@@ -166,12 +166,13 @@ a.link--offsite::after {
   flex-direction: column;
   align-items: center;
   flex: 1 1 100px;
-}
-
-.quicklinks a {
-  color: var(--default-text);
   font-size: var(--heading-4);
   font-family: var(--heading-font);
+}
+
+.quicklinks a, .quicklinks a:visited,
+.quicklinks a:hover, .quicklinks a:visited:hover {
+  color: var(--default-text);
 }
 
 .quicklinks__icon {
@@ -386,11 +387,29 @@ ul.mpl-links {
   font-weight: bold;
 }
 
+ul.mpl-links a, ul.mpl-links a:visited,
+ul.release-docs a, ul.release-docs a:visited
+{
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul.mpl-links a:hover, ul.mpl-links a:visited:hover,
+ul.release-docs a:hover, ul.release-docs a:visited:hover
+{
+  color: var(--pst-color-link-hover);
+}
+
 .release dt {
   font-family: var(--heading-font);
   font-size: var(--heading-5);
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 1em;
+}
+
+.release dt:first-child {
+  margin-top: 0;
 }
 
 .release dd {
@@ -657,6 +676,10 @@ a.button::after {
   transition: margin 0.2s ease-out;
 }
 
+a.button:hover {
+  color: var(--white);
+}
+
 .button:hover::after,
 a.button:hover::after {
   margin-left: 80px;
@@ -678,7 +701,8 @@ a.button--teal {
 }
 
 .button--green,
-a.button--green {
+a.button--green,
+a.button--green:hover {
   background: var(--viridis-green);
   color: var(--black);
 }
