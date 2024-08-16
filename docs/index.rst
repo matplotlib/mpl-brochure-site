@@ -6,7 +6,7 @@
    :gutter: 1
 
    .. grid-item-card:: Matplotlib: Visualization with Python
-      :class-card: sd-border-0
+      :class-card: sd-border-0 mpl-card-intro
       :class-title: intro-title
       :shadow: none
 
@@ -82,7 +82,7 @@
    :gutter: 1
 
    .. grid-item-card:: News
-      :class-card: sd-border-0
+      :class-card: sd-border-0 mpl-card-news
       :class-title: mpl-card-title
       :class-footer: link-offsite
       :shadow: none
@@ -159,7 +159,7 @@
    :gutter: 1
 
    .. grid-item-card:: Domain Specific Tools
-      :class-card: sd-border-0 sd-mt-5
+      :class-card: sd-border-0 mpl-card-tools
       :class-title: mpl-card-title
       :class-footer: link-offsite
       :shadow: none
@@ -172,6 +172,7 @@
       `More Domain-Specific Tools <https://matplotlib.org/mpl-third-party/>`__
 
    .. grid-item::
+      :class: mpl-card-projects
 
       .. tab-set::
          :class: tabs tools
@@ -230,7 +231,7 @@
 .. grid::
 
    .. grid-item-card:: Support Matplotlib
-      :class-card: sd-border-0
+      :class-card: sd-border-0 mpl-card-support
       :class-title: mpl-card-title
       :shadow: none
 
