@@ -212,35 +212,35 @@ a.link-offsite::after, div.link-offsite a::after {
   min-height: 280px;
 }
 
-.tabs-tab[for="sd-tab-item-0"] {
+.sd-tab-label[for="sd-tab-item-0"] {
   --sd-color-tabs-underline-active: var(--dark-purple);
   --sd-color-tabs-underline-hover: var(--dark-purple);
   --sd-color-tabs-label-active: var(--dark-purple);
   --sd-color-tabs-label-hover: var(--dark-purple);
 }
 
-.tabs-tab[for="sd-tab-item-1"] {
+.sd-tab-label[for="sd-tab-item-1"] {
   --sd-color-tabs-underline-active: var(--purple);
   --sd-color-tabs-underline-hover: var(--purple);
   --sd-color-tabs-label-active: var(--purple);
   --sd-color-tabs-label-hover: var(--purple);
 }
 
-.tabs-tab[for="sd-tab-item-2"] {
+.sd-tab-label[for="sd-tab-item-2"] {
   --sd-color-tabs-underline-active: var(--blue);
   --sd-color-tabs-underline-hover: var(--blue);
   --sd-color-tabs-label-active: var(--blue);
   --sd-color-tabs-label-hover: var(--blue);
 }
 
-.tabs-tab[for="sd-tab-item-3"] {
+.sd-tab-label[for="sd-tab-item-3"] {
   --sd-color-tabs-underline-active: var(--teal);
   --sd-color-tabs-underline-hover: var(--teal);
   --sd-color-tabs-label-active: var(--teal);
   --sd-color-tabs-label-hover: var(--teal);
 }
 
-.tabs-tab[for="sd-tab-item-4"] {
+.sd-tab-label[for="sd-tab-item-4"] {
   --sd-color-tabs-underline-active: var(--green);
   --sd-color-tabs-underline-hover: var(--green);
   --sd-color-tabs-label-active: var(--green);

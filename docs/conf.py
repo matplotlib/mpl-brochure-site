@@ -64,5 +64,14 @@ sd_custom_directives = {
             "shadow": "none",
             "text-align": "center",
         },
-    }
+    },
+    "project-card": {
+        "inherit": "card",
+        "options": {
+            "class-card": "sd-border-0",
+            "class-header": "mpl-card-title",
+            "class-footer": "link-offsite",
+            "shadow": "none",
+        },
+    },
 }
