@@ -32,6 +32,10 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# -- Options for Internationalization ----------------------------------------
+
+gettext_compact = 'brochure'
+
 # -- Options for HTML output -------------------------------------------------
 
 html_css_files = ['css/normalize.css', 'css/landing.css']
