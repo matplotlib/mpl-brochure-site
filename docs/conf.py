@@ -56,11 +56,10 @@ notfound_urls_prefix = '/'
 
 sd_custom_directives = {
     "quicklink": {
-        "inherit": "grid-item-card",
+        "inherit": "card",
         "options": {
             "class-card": "quicklink sd-border-0",
             "class-img-top": "dark-light",
-            "margin": "5",
             "shadow": "none",
             "text-align": "center",
         },

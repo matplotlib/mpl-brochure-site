@@ -39,7 +39,7 @@
       .. div::
          :name: image-rotator
 
-.. grid::
+.. div:: sd-d-flex-row sd-align-major-spaced flex-wrap
 
    .. quicklink::
       :img-top: _static/images/getting-started.svg
@@ -78,7 +78,7 @@
 
 .. div:: rule rule-viridis
 
-.. grid::
+.. grid:: 1 1 2 2
    :gutter: 1
 
    .. grid-item-card:: News
@@ -155,7 +155,7 @@
 
 .. div:: rule rule-viridis
 
-.. grid::
+.. grid:: 1 1 2 2
    :gutter: 1
 
    .. grid-item-card:: Domain Specific Tools
@@ -235,7 +235,7 @@
       :class-title: mpl-card-title
       :shadow: none
 
-      .. grid::
+      .. grid:: 1 1 3 3
 
          .. grid-item-card:: Contribute
             :class-card: callout callout-purple sd-border-top-0
