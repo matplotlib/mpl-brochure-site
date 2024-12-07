@@ -14,7 +14,7 @@ jobs:
       - python/install-packages
       - run:
           name: Build docs
-          command: cd docs/ && make html
+          command: cd docs/ && make html O="-Dlanguage='la'"
       - persist_to_workspace:
           root: docs/_build/html
           paths: .
