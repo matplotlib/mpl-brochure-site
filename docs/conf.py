@@ -40,7 +40,6 @@ html_theme_options = {
     "navbar_links": ("absolute", "server-stable"),
     "footer_start": ["landing_footer"],
     "secondary_sidebar_items": [],
-    "back_to_top_button": False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
