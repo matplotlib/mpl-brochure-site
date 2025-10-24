@@ -1,0 +1,11 @@
+:orphan:
+
+.. title:: Page Not Found
+
+.. raw:: html
+
+  <section class="grid__full-page">
+    <h1>Page Not Found</h1>
+
+    <p>Unfortunately we couldn't find the content you were looking for.</p>
+  </section>
