@@ -1,5 +1,7 @@
 import datetime
-import subprocess
+
+# Release mode enables optimizations and other related options.
+is_release_build = tags.has('release')  # noqa
 
 # -- Project information -----------------------------------------------------
 
@@ -43,6 +45,11 @@ html_theme_options = {
     # commented out to work around https://github.com/matplotlib/mpl-brochure-site/issues/106
     # "back_to_top_button": False,
 }
+if is_release_build:
+    html_theme_options["analytics"] = {
+        "plausible_analytics_domain": "matplotlib.org",
+        "plausible_analytics_url": "https://views.scientific-python.org/js/script.js"
+    }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the theme static files,
