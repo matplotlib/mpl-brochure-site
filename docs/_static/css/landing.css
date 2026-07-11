@@ -132,8 +132,7 @@ a.link--offsite::after {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   content: "\f061";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font: var(--fa-font-solid);
   margin-left: 10px;
 }
 /* Rulers */
@@ -669,8 +668,7 @@ a.button {
 .button::after,
 a.button::after {
   content: "\f061"; /* fa-arrow-right */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font: var(--fa-font-solid);
   margin-left: 60px;
   display: inline-block;
   transition: margin 0.2s ease-out;
@@ -710,8 +708,7 @@ a.button--green:hover {
 .button--green::after,
 a.button--green::after {
   content: "\f061"; /* fa-arrow-right */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font: var(--fa-font-solid);
 }
 
 .imrot-img {
