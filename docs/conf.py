@@ -42,8 +42,7 @@ html_theme_options = {
     "navbar_links": ("absolute", "server-stable"),
     "footer_start": ["landing_footer"],
     "secondary_sidebar_items": [],
-    # commented out to work around https://github.com/matplotlib/mpl-brochure-site/issues/106
-    # "back_to_top_button": False,
+    "back_to_top_button": False,
 }
 if is_release_build:
     html_theme_options["analytics"] = {
